@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ammara's Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333333;
+      color: #333;
+    }
+    
+    header {
+      background-color: #333;
+      color: #94e0a8;
+      padding: 1em 0;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: #333;
+      text-align: center;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    
+    nav a:hover {
+      background-color: #4a90e2;
+    }
+    
+    main {
+      background-color: #daf5e1;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    
+    h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    p {
+      margin-bottom: 1em;
+      line-height: 1.6;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .divider {
+      width: 100%;
+      height: 5px;
+      margin: 20px 0;
+      background-color: white;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+    }
+    
+    .about-section {
+      overflow: auto;
+      margin-bottom: 2em;
+    }
+    
+    .aboutme {
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      max-width: 250px;
+    }
+    
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 20px 0;
+      clear: both;
+    }
+    
+    .quiz-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .quiz-column img {
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 20px 0;
+    }
+    
+    .gallery-item {
+      border: 4px solid white;
+      padding: 10px;
+      background-color: #daf5e1;
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .gallery-item p {
+      font-size: 15px;
+      margin: 0;
+    }
+    
+    /* Anime section navigation */
+    .section-nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .section-nav a {
+      color: #white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+    
+    .section-nav a:hover {
+      text-decoration: underline;
+    }
+    
+    details {
+      margin: 20px 0;
+    }
+    
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    
+    summary:hover {
+      color: #4a90e2;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .quiz-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .aboutme {
+        float: none;
+        max-width: 100%;
+        margin: 0 auto 15px;
+        display: block;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      nav a {
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+    }
+      .paddingforaboutme{
+          padding-left:100px;
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#Anime">Anime</a>
+    <a href="#Hobbies">Hobbies</a>
+    <a href="#Gallery">Gallery</a>
+  </nav>
+
+  <main>
+    <!-- ABOUT ME -->
+    <section>
+    <section id="about">
+      <div class="about-section">
+        <img class="aboutme" src="Media/Lemonysmileatphone.png" alt="About Me">
+        <div>
+          <h2 style="margin-bottom: 5px;">About</h2>
+          <p class="text-center" style="margin-bottom: 5px;">
+            Hello there! I'm <b>Ammara</b>. I have the biggest love for many things such as anime, manga, and my many other hobbies. This website is supposed to be meant for a fun project for my technology class where I make a personal website with html. Luckly during the summer I was taking some free html classes, so I have some experience with this coding language. This is supposed to present my many different interests and why I like them. I hope you enjoy!
+          </p>
+          
+          <div style="width:100px; height:85px;"></div>
+          <!-- QUIZ RESULTS -->
+          <h2 class="text-center">QUIZ RESULTS</h2>
+            <div class="paddingforaboutme">
+          <div class="quiz-grid">
+            <div class="quiz-column">
+              <a href="https://theotaku.com/quizzes/view/3760/what_type_of_dere_are_you%3F_" target="_blank">
+                <img src="http://www.theotaku.com/guru_results/3760_DereDere.jpg" alt="What Type Of Dere Are You?">
+              </a>
+              <a href="https://www.theotaku.com/quizzes/view/4034/what_anime_weapon_would_work_best_for_you%3F" target="_blank">
+                <img src="http://www.theotaku.com/guru_results/4034_Wand.jpg" alt="What Anime Weapon Would Work Best For You?">
+              </a>
+            </div>
+            <div class="quiz-column">
+              <a href="https://www.theotaku.com/quizzes/view/2412/what_eevee_evolution_are_you%3F" target="_blank">
+                <img src="http://www.theotaku.com/guru_results/2412_Espeon.jpg" alt="What Eevee Evolution Are You?">
+              </a>
+              <a href="https://theotaku.com/quizzes/view/2613/what_element_fits_you_best%3F" target="_blank">
+                <img src="http://www.theotaku.com/guru_results/2613_Light.jpg" alt="What Element Fits You Best?">
+              </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ANIME -->
+    <section id="Anime">
+      <h2>Anime</h2>
+      <nav class="section-nav">
+        <a href="#FLCL">FLCL</a>
+        <a href="#DM">Dungeon Meshi</a>
+        <a href="#SANDA">Sanda</a>
+      </nav>
+      <p class="text-center"><b>THIS IS NOT IN ORDER OF FAVORITES</b></p>
+      
+      <h3 id="FLCL">FLCL</h3>
+      <p>FLCL aka FoolyCooly, is an old anime made in the early 2000s. Made by the same studio who contributed in Evangalien. It has themes about puberty and the meaning of many things but said in figurative ways. It's a wacky anime, that has a special place in my heart because the themes, teh animation, the characters, the development, and the other personal memories I had with it. It's one of those animes, that I will cherish forever.</p>
+      <img src="Media/flcl.jpg" alt="FLCL Cover">
+      
+      <h3 id="DM">Dungeon Meshi</h3>
+      <p>Dungeon Meshi, is a unique take on fantasy dungeon genres. It explores multiple themes and also creates delcious meals that looks so edible through the screen. Not only that, but it expands more on the outside world. Every character has a unique design, and experiments with many characters. At first it seems very simple anime but as you go into it, you realize the ever expanding world and characters it has. Made by the same studio who is kinda besties of FLCL, made Panty and stockings with garterbelt, Gurren Laggan, AND MANY OTHER ANIMES THAT I LOVED.</p>
+      <img src="Media/DM.png" alt="Dungeon Meshi Cover">
+      
+      <h3 id="SANDA">Sanda</h3>
+      <p>Sanda made by the same mangaka that produced beastars and others. Also the daugher of the creator of Baki. Sanda is a special anime, it has so many secrets and every dialogue has secret meaning into it. Allowing me to look back and every scene and theroize what would happen next, therozie how other characters feel for each other,or even about the school the students are confined into. It's made by Science Saru which made the anime Scott Pilgrim anime and Dandadan which are two shows that I loved dearly as well.</p>
+      <img src="Media/SANDA.png" alt="Sanda Cover">
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- HOBBIES -->
+    <section id="Hobbies">
+      <h2>Hobbies</h2>
+      <nav class="section-nav">
+        <a href="#Drawing">Drawing</a>
+        <a href="#Acting">Acting</a>
+        <a href="#Volleyball">Volleyball</a>
+        <a href="#Writing">Writing</a>
+        <a href="#Reading">Reading</a>
+        <a href="#Film">Film</a>
+      </nav>
+      <p class="text-center"><b>THIS IS IN ORDER OF FAVORITES</b></p>
+      
+      <h3 id="Drawing">Drawing</h3>
+      <p>Drawing is one of my favorite things to do on my free time. It's is literally vital to me and if my ability of drawing is removed, I would get really depressed. I would start since I was a baby, My family has history of artistic ability mostly on my father's side. Anyways, I love drawing, it gives me happines and it gives me life. The sweet satisfaction when Im done with a drawing or done with a really good sketch or coloring the happiness is astronomical. I would often draw doodles just for fun. Sometimes I draw a focus on the human nature and psychology. Either happy or sad sort of like Avogadro9. Either the realistic side or a more figurative side of it. In short I love drawing and it is vital to me.</p>
+      
+      <h3 id="Acting">Acting</h3>
+      <p>Acting, I love acting. I love imaging myself in different situations depending on the script and acting those different emotions. Unforunately I'm not that funny, I'm a hit or miss. Though I don't do these often because I do not have those kind of opprotunties. Though it's sort of fun and nervewracking.</p>
+      
+      <h3 id="Volleyball">Volleyball</h3>
+      <p>Volleyball, I got into it during 8th grade. I was naturally good at diving and reciving the ball. Then later in 9th grade because of neccesiaty I was forced into being a setter. Even though we didn't go up to the top 3 for MIST 2025 game. My team ended up winning 5th place with some mishaps. Now I'm captain, I really need to lock in. I haven't been feeling that passionate spirit for it as of yet. I dont know why, it makes me sad.</p>
+      
+      <h3 id="Writing">Writing</h3>
+      <p>Writing is actually fun, even essaies are fun to write. Nonfiction or fiction though it might depend on the subject. Recently I've been writing a lot more. A story called "A Goodboy's Tradgedy" I honestly named it that for clickbait and a nod to some of the insipration the book have which is "A Good Girls Guide to Murder". Depending on the assignment and question, I can even enjoy some of the essaies that are assigned for class, for some reason it gives some sort of joy. I usually want a focus in exploring deeper subjects that has to use reasoning and explainations for it. Which makes my mind very nice and happy.</p>
+
+        <h3 id="Reading">Reading</h3>
+        <p>Reading is fun at times, only sometimes. I only really liked fictional thrillers, which is what ive seen. Some nonfictions such as the one im reading right now which has to deal with the the school system and prompoting a system of thinking. </p>
+      <h3 id="Film">Film</h3>
+      <p>Film, I also don't do these often. I love the colors and composition of the visuals. Also the writing can do a lot as well and audio AUDIO IS THE MOST IMPORTANT.</p>
+
+      
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- GALLERY -->
+    <section id="Gallery">
+      <details open>
+        <summary class="text-center" style="font-size: 45px;">Gallery</summary>
+      <p class="text-center"><b>This is some of my art through 2022-2025</b></p>
+        <details open style="margin-top: 20px;">
+          <summary style="font-size: 25px;">15yrs old</summary>
+          
+          <div class="gallery-grid">
+                          <div class="gallery-item">
+                  <img src="Media/Buncigcupcake.png" alt="Buncigcupcake">
+                <p>Im so happy about this one, its supposed to be like a flash photography. I quite like the shading style i used for this lolz</p>
+                    </div>
+            <div class="gallery-item">
+              <img src="Media/lemonluth.png" alt="lemonluth">
+              <p>This was supposed to be for a personal contest for a friend of mine. I WON 2ND PLACE WOOHOOO!! by only a few votes but I am very very happy muhahahaha.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/Lemonyalmosthrowup.gif" alt="Lemon almost throw up">
+              <p>This was during when I had hand mouth and feet disease. I was suffering and this was inspired when i was on my phone laughing to some stupid video and I almost threw up on my sister's bed lol.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/Promise.png" alt="promise">
+              <p>I actually never did first person perspective work like this, this was my first time and I was impressed.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/Beachkalaandcole.png" alt="beach day or smth">
+              <p>I was actually testing out a new technique of the 60 30 10 percent rule for color. I think I executed it nicely. I enjoy this piece. It was also inspired by a Backugo and Uraraka ship art by Khyleri, I don't support the artist I just like their art smh.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/Eatingsandwichlemony.png" alt="Lemony eating a sandwich">
+              <p>This has no backstory, though I dont like the colors much. I do enjoy the perspective of it. the original idea was for lemony to be on the stairs eating a sandwich then it moved to a stone bench under a tree.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/Coleatconvinentstore.png" alt="Cole at the convinent store">
+              <p>I really enjoy this one, specifically for how cute the characer looks and because of the perspective. Also the expression and colors just gives off a nice and consistent vibe.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/GossipElevator.png" alt="Gossip Elevator">
+              <p>We were just riding the elevator and I crouched down and that was basically my view point, but instead of them talking it was basically quiet.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/RETRYNOW.png" alt="Retry Now Miku">
+              <p>This is based off of a song called Retry now sang by Miku the vocaloid.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/KALASUN.png" alt="Kala in the sun">
+              <p>I can't stop laughing, that her name is "Kala". Anyways it's the same girl in the beach picture, but you just don't see her face in the beach picture.</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="Media/Grabknife.png" alt="Grab the Knife">
+              <p>No comments.</p>
+            </div>
+          </div>
+        </details>
+        
+        <details style="margin-top: 20px;">
+          <summary style="font-size: 25px;">14yrs old</summary>
+            <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="Media/HAPPYBDAY15.png" alt="happybirthdaytolemony">
+              <p>I know it says 15, but technically I made this at 14. LMAO</p>
+            </div> <!--Gallery item-->
+                
+                <div class="gallery-item">
+              <img src="Media/RHANDS.png" alt="Hands">
+              <p>It was a test of drawing hands and shading.</p>
+            </div> <!--Gallery item-->
+
+                <div class="gallery-item">
+              <img src="Media/Cantiballoon.png" alt="Balloon">
+              <p>No comments</p>
+            </div> <!--Gallery item-->
+
+              <div class="gallery-item">
+              <img src="Media/Pineapplebun.png" alt="Pineapple bun">
+              <p>This was the same pose from years ago, of my friend's oc. </p>
+            </div> <!--Gallery item-->
+                
+                <div class="gallery-item">
+              <img src="Media/Volleyballpark.png" alt="Volleyball">
+              <p>Volleyball at the park across the street from wellspring.</p>
+            </div> <!--Gallery item--> 
+
+            </div> <!--Gallery grid-->
+        </details>
+        
+        <details style="margin-top: 20px;">
+          <summary style="font-size: 25px;">13yrs old</summary>
+        <div class="gallery-grid">
+            
+               <div class="gallery-item">
+              <img src="Media/Windcatcherlemon.png" alt="Lemony wind catcher">
+              <p>I dont know, but I love showing this one off.</p>
+            </div> <!--Gallery item--> 
+
+                           <div class="gallery-item">
+              <img src="Media/SmokebreakShion.png" alt="Smoke break Shino">
+              <p>Inspired by the mob psycho 100 outro :).</p>
+            </div> <!--Gallery item-->
+
+            
+                           <div class="gallery-item">
+              <img src="Media/BORGERLEMON.png" alt="BORGERLEMON">
+              <p>This is one of my favs cuz it's so messy and silly.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/SPIKEBANGLEMON.png" alt="SPIKEBANGLEMON">
+              <p>She is basically threating, that she will kill you and you will end up on a tribute shirt. I love the colors and chaos, so fire bro.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Heart.png" alt="Heart">
+              <p>I dont know. no comment</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/ethereal.png" alt="ethereal">
+              <p>this is a request thing of a person's oc and oh my god they ethereal..</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/appreciateyoursensesinnature.png" alt="appreciate your senses in nature">
+              <p>This one about being in the present moment and stuff..</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Bunnyboypopstar.png" alt="Bunny boy popstar">
+              <p>I remember listening to true crime podcast, rotten mango, about this evil school. This also took a while, I really love this one and I was def testing perspective during this timeperiod.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/sunsetmecha.png" alt="sunset mecha">
+              <p>This was supposed to be fanart for someone, unfortunately I can't find their account but man I do remember their art. Im a little sad about that.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Bouncingball.gif" alt="Bouncing ball">
+              <p>This is lowkey smooth, but you can see the lag a bit on there. Though you could tell I was working on a bit of animation practice.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/BLINKWAVE.png" alt="furry sad furry">
+              <p>I lowkey cooked with the colors and also the texture of the lineart, I love the messy feel to it. I don't know how it ended up like that but I am not complaining.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Furrycrepes.png" alt="Furries eating crepes together">
+              <p>This was lowkey based on an anime scene from Onimai, where YURI.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Nebulaintheeye.png" alt="Nebula in the eye">
+              <p>girl saw the past, present and future all at once. I lowkey cooked cuz it got like really popular, and it was my first super popular art works.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/FURRYFEMBOY.png" alt="I dont even know">
+              <p>This is a redraw of a random design.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Funkersaround.png" alt="Little silly guys around">
+              <p>I like the little creatures and the shark chopstick. I even remember drawing some of the parts and chucking to myself about the little sillies around the place.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/2024.png" alt="2024 new years">
+              <p>I actually really love the colors on this one, it looks so nice together I love it.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Creepybunny.png" alt="creepyahbunny">
+              <p>Lowkey this was just purple guy in the bunny suit refrence.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/CATWGUN.png" alt="Furry w/ a gun">
+              <p>I Honestly did this out of spite because someone was tweakin about furries or something.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/HEAVENLYSHINO.png" alt="Ethereal shino">
+              <p>Loser character smh.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Sillyidkwhatisthis.png" alt="request">
+              <p>I really like this one for the shading in particular, has that alt vibes. It's pretty edgy or whatever ngl but i like it.</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/EMOAH.png" alt="LOCKED OUT ASH">
+              <p>I really like this one, cuz its super emo and super angst. Also again with the shading colors and plus the lineart. NICE</p>
+            </div> <!--Gallery item-->
+            
+                           <div class="gallery-item">
+              <img src="Media/Kawaii.png" alt="Kawaii">
+              <p>I remember looking at this and thinking. WOw, IM DEF GETTING BETTER AT ART YAHOOO!!! I dont knwo what changed though.</p>
+            </div> <!--Gallery item-->
+
+                                       <div class="gallery-item">
+              <img src="Media/Demonegirl.png" alt="Demonegirl">
+              <p>This was a recreation of one of my old drawings. You will see the CRAZY improvement. Wait, ngl you can see the improvment a lot in this section.</p>
+            </div> <!--Gallery item-->
+
+                                                   <div class="gallery-item">
+              <img src="Media/Anosu.png" alt="Anosu">
+              <p>DEAR GOD this artist's character that I drew, is so UNDERRATED. THEY ARE SO GOOD AT ART. Their colors, perspective, character design, and expressions. ARE SO GOOD, if I could replace a popular artist with him in their place, I WILL DEF DO THAT BECAUSE HE DESERVES WAY MROE THAN THAT ARGHHHHH.</p>
+            </div> <!--Gallery item-->
+                                                   <div class="gallery-item">
+              <img src="Media/Uvi.png" alt="Uvi">
+              <p>This was a character from one of my friends, though we don't talk to each other a lot, nowadays literally never LOL. Though ,I really like this drawing.</p>
+            </div> <!--Gallery item-->
+
+                                                               <div class="gallery-item">
+              <img src="Media/Jackie.png" alt="Jackie">
+              <p>Last photo cuz this is going on for too long, I think I realized I yapped more stuff in my 15yrs old category than this one because I probably put more meaning into it or it has some sort of memory. Though I dont know, anyways this one was another request I did for someone.</p>
+            </div> <!--Gallery item-->
+            
+        </div> <!--Gallery grid-->
+        </details>
+        
+        <details style="margin-top: 20px;">
+          <summary style="font-size: 25px;">12yrs old</summary>
+            <div class="gallery-grid">
+
+                      <div class="gallery-item">
+              <img src="Media/Ghostthing.png" alt="Ghost thing, Idk what to call it.">
+              <p>This is just a profile picture art, It's not anything special and I basically have no comments on it.</p>
+            </div> <!--Gallery item-->  
+                
+                            <div class="gallery-item">
+              <img src="Media/1bitcity.png" alt="1-bit city">
+              <p>You could tell my inexperience with actual 1-bit pixelart or small canvas, but it did end up winning 2nd place for a contest. Which is quite suprising. Though the 1st place winner def deserved that win.</p>
+            </div> <!--Gallery item-->
+                
+                      <div class="gallery-item">
+              <img src="Media/Kobeni.png" alt="Kobeni drawing">
+              <p>This is a pretty ugly art from me, and I even knew it myself. It was a recreation of the scene where Kobeni watches these guys pull up and she beats their booties with her crazy martial art skills. LOLL, which is lowkey character defying moment because she kept on being shown of being a useless scardey cat, she was still scared she is just showing off her skills lowkey.</p>
+            </div> <!--Gallery item-->  
+                
+            <div class="gallery-item">
+              <img src="Media/Morebunnypopstar.png" alt="Morebunnypopstar">
+              <p>This is honestly a play on the perspective, which honestly I'm impressed for a 12 year old LMAO.</p>
+            </div> <!--Gallery item-->
+                
+        </details>
+        
+        <details style="margin-top: 20px;">
+          <summary style="font-size: 25px;">11yrs old</summary>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="Media/Agiftforyou.png" alt="Agiftforyou">
+              <p>You can obviously tell that I improved drastically in shapes and perspective based on this photo alone LOL.</p>
+            </div> <!--Gallery item-->
+
+                      <div class="gallery-item">
+              <img src="Media/Loverboy.png" alt="Lover boy">
+              <p>Honestly, I hate the dookie ah lineart. It's so thick and shaky, plus the colors looks so muddy and mushy together. It's very icky</p>
+            </div> <!--Gallery item-->
+
+                                <div class="gallery-item">
+              <img src="Media/Lemonylayingonidk.png" alt="Lemony laying">
+              <p>Honestly,I remember being so proud of it. Though when I see it, I realize how buns it is. Like girl how are you no clipping ur leg through the box thing and why is your hand's facing that way also the lineart things again and the colors MUSHY.</p>
+             </div><!--Gallery item-->
+
+                                          <div class="gallery-item">
+              <img src="Media/Softboywhar.png" alt="I hate myself oh my god">
+              <p>This is so cringe, don't even ask man.</p>
+             </div><!--Gallery item-->
+
+                                                    <div class="gallery-item">
+              <img src="Media/HAZZAOLDDEMONEGIRL.png" alt="Demon e girl">
+              <p>This is the og drawing, as you can see. You can def tell the improvement in anatomy, and usage of lines.</p>
+             </div><!--Gallery item-->
+
+                                                              <div class="gallery-item">
+              <img src="Media/scratchlookinah.png" alt="Lemony has a heart">
+              <p>This is was a  test on some lineless art and like gradiation with it, I think I did quite well with it. suprisingly.</p>
+             </div><!--Gallery item-->
+
+                                                                        <div class="gallery-item">
+              <img src="Media/Bunnygirlthing.png" alt="Bunny girl">
+              <p>I hate this stinky ah drawing, the shading is so dookei crap and I HATE IT. It is always one day an anime artist does shading like this rip.</p>
+             </div><!--Gallery item-->
+          
+                                                                        <div class="gallery-item">
+              <img src="Media/Teacuppeople.png" alt="Teacuppeople">
+              <p>I don't knwo what to say about this drawing, just that wow, pretty cup.</p>
+             </div><!--Gallery item-->
+
+                                                                                  <div class="gallery-item">
+              <img src="Media/Whothatbumupthere.png" alt="GET OUT">
+              <p>This creepy guy following a little cutie patootie.</p>
+             </div><!--Gallery item-->
+
+                                                                                           <div class="gallery-item">
+              <img src="Media/Creepyfella.png" alt="Gah">
+              <p>Lowkey that scar thing on his head, was inspired by this anime character, i forgot. Lowkey im pretty proud of this one. Plus the colors work very well togetger. im such a hit or miss bruh </p>                                                       
+             </div><!--Gallery item-->
+          
+<div class="gallery-item">
+              <img src="Media/Tsundere.png" alt="Tsundere">
+              <p>This was before I redesigned lemony, her design wasn't that good but I am very happy about her new design. Though ngl, the background and drawing colors lowkey looks coherrent. Though yeah def givving off 11 year old vibes with the drawing subject. </p>
+             </div><!--Gallery item-->
+</div><!--Gallery grid-->
+                    </details>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ammara's Website</p>
+  </footer>
+</body>
+</html>
+
